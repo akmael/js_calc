@@ -6,25 +6,47 @@
 }
 
 #content{
-  
+
+
 }
 
 #calculator-body {
-  
+
+  background-color: 	#FF8000;
+  width:240px;
+  border-width: medium #000;
+  border-radius: 5px;
+
+
 }
 
 #display {
-  
+
+    width: 180px;
+    height: 20px;
+    background-color: lightgrey;
+    padding-left: 5px;
+    margin-left: 15px;
+
+
 }
 
 .key {
-  
+   background-color: #0000FF;
+
+
+}
+.num{
+  width: 45px;
+
 }
 
 .operator {
-  
+  width: 45px;
+
 }
 
 #equal{
-  
+  width: 190px;
+
 }
