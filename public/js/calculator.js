@@ -14,40 +14,41 @@ var Calculator = {
 }
 
 function add(num){
-  num = parseInt(num);
-  this.current = parseInt(this.current);
+  num = parseFloat(num);
+  this.current = parseFloat(this.current);
   this.current += num;
   console.log(this.current)
   result();
 }
 function subtract(num){
-  num = parseInt(num);
-  this.current = parseInt(this.current);
+  num = parseFloat(num);
+  this.current = parseFloat(this.current);
   this.current -= num;
 
 
 
 }
 function multiply(num){
-  num = parseInt(num);
-  this.current = parseInt(this.current);
+  num = parseFloat(num);
+  this.current = parseFloat(this.current);
   this.current *= num;
 
   result();
-  console.log(this.current);
+
 
 }
 function divide(num){
-  num = parseInt(num);
-  this.current = parseInt(this.current);
+  num = parseFloat(num);
+  this.current = parseFloat(this.current);
   this.current /= num;
   result();
-  console.log(this.current);
+
 
 }
 function result(){
 
   return this.current;
+
 
 }
 function reset(num){
@@ -55,16 +56,14 @@ function reset(num){
 }
 
 function addToMemory(num){
-  this.memory += num;
-  console.log('commited to memory')
+  this.memory = num;
+
+  console.log('commited to memory');
+  console.log(this.memory);
 }
 
 function subtractFromMemory(num){
-  this.current -= num;
-}
-
-function clearMemory(){
-  this.memory = 0;
+  this.memory -= num;
 }
 
 function getMemory(){

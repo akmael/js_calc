@@ -18,6 +18,7 @@ $(document).ready(function(){
   $('#decimal').on('click', updateDisplay);
 
 
+
   function updateDisplay(){
      num += $(this).text();
     $display.text(num);
@@ -83,7 +84,7 @@ $(document).ready(function(){
 
     lastOperation = '+';
     console.log(calculator.current);
-    console.log(lastOperation);
+
 
 
   }
@@ -95,19 +96,20 @@ $(document).ready(function(){
   }
 
   function memAdd(){
-     calculator.addToMemory();
+     calculator.addToMemory(num);
 
   }
 
   function memSub(){
-     calculator.subtractFromMemory;
+     calculator.subtractFromMemory(num);
 
   }
 
   function memClear(){
-    calculator.clearMemory;
+    calculator.memory = 0;
 
   }
+
 
   function memDisplay(){
     getMemory();
